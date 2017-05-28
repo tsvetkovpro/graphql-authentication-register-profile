@@ -1,0 +1,163 @@
+@import "spectre.min.css";
+
+body, html {
+  background: #f2f2f2;
+}
+
+/*
+Layout
+*/
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.flex-center .item {
+  width: 300px;
+}
+
+.flex-bottom {
+  position: absolute;
+  align-self: flex-end;
+  bottom: 30px;
+}
+
+/*
+Panels
+*/
+
+.panel {
+  border: .1rem solid #efefef;
+  border-radius: .2rem;
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.panel .panel-title, .panel .panel-meta {
+  font-weight: 300;
+}
+
+.panel .panel-image:first-child {
+  padding-top: 0;
+  background: #fff;
+  border-bottom: 0.1rem solid #eee;
+}
+
+.panel .panel-header, .panel-header, .panel .panel-body, .panel .panel-footer {
+  position: relative;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  background: #fff;
+}
+
+.panel-header {
+  color: #999;
+  font-size: 13px;
+  padding: 1.5rem;
+  background: transparent;
+}
+
+.panel .panel-header:last-child, .panel .panel-body:last-child, .panel .panel-footer:last-child {
+  padding-bottom: 1.5rem;
+}
+
+.panel .panel-title {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.panel .panel-meta {
+  color: #888;
+  font-size: 1.3rem;
+}
+
+.panel-title a {
+  color: #333;
+}
+
+/*
+Forms
+*/
+
+.form-input {
+  background: transparent;
+  border: none;
+}
+
+.form-input:focus {
+  box-shadow: none;
+}
+
+/*
+Grid
+*/
+
+.square {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+}
+
+.square.half {
+  padding-bottom: 50%;
+}
+
+/*
+Components
+*/
+
+.avatar[data-initial]::after {
+  color: #333;
+}
+
+.profile .avatar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 0;
+  font-size: 5em;
+  color: #333;
+  background: transparent;
+}
+
+.avatar[data-initial]::before {
+  text-transform: uppercase;
+}
+
+.online, .online.circle {
+  display: inline-block;
+  color: #999;
+  font-size: 12px;
+  margin: 0 5px;
+}
+
+.online.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #97d271;
+}
+
+.ajax-success {
+  position: absolute;
+  right: 0;
+  top: 0;
+  line-height: 32px;
+  font-size: 12px;
+  color: #999;
+}
+
+.sign {
+  letter-spacing: -0.7px;
+}
+
+.text-decoration, .text-decoration:hover {
+  text-decoration: none;
+}

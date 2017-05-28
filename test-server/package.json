@@ -1,0 +1,31 @@
+{
+  "name": "test-server",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Nikita Marcius",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "dev": "nodemon --exec babel-node ./src/server.js"
+  },
+  "dependencies": {
+    "graphql": "*",
+    "graphql-server-koa": "*",
+    "graphql-subscriptions": "*",
+    "js-sha3": "*",
+    "jsonwebtoken": "*",
+    "kcors": "*",
+    "koa": "*",
+    "koa-bodyparser": "*",
+    "koa-router": "*",
+    "mongoose": "*",
+    "subscriptions-transport-ws": "*"
+  },
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-plugin-transform-runtime": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-stage-3": "*",
+    "babel-register": "*",
+    "nodemon": "^1.11.0"
+  }
+}
